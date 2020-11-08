@@ -6,16 +6,6 @@ import { verificaToken } from '../middlewares/autenticacion';
 
 const userRoutes = Router();
 
-/*userRoutes.get('/prueba', ( req: Request, res: Response) => {
-
-	res.json({
-		ok: true,
-		mensaje: 'Todo funciona bien!'
-	})
-
-});*/
-
-
 // Login
 userRoutes.post('/login', ( req: Request, res: Response) => {
 
@@ -125,6 +115,19 @@ userRoutes.put('/update', verificaToken, ( req: any, res: Response) => {
             tpken: tokenUser
 		});
 
+	});
+
+});
+
+
+// Obtener usuario por token
+userRoutes.get('', [ verificaToken ], (req: any, res: Response) => {
+
+	const usuario = req.usuario;
+
+	res.json({
+		ok: true,
+		usuario
 	});
 
 });

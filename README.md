@@ -1,6 +1,6 @@
 # FotosGramApp-Backend
 
-Este es el código necesario para establecer el backend conectado a MongoDB usando Mongoose. Para ser usado en la App FotosGramApp-Front, en la cual tiene los servicios de login, creación y modificación de usuarios usando token. De igual manera tiene un método para encriptar la contraseña en el momento de crear un usuario.
+Este es el código necesario para establecer el backend conectado a MongoDB usando Mongoose. Para ser usado en la App FotosGramApp-Front, en la cual tiene los servicios de login, creación y modificación de usuarios usando token. De igual manera tiene un método para encriptar la contraseña en el momento de crear un usuario. Así como también los servicios para crear un post, obtener los post de forma paginada, subir una imagen, obtener dicha imagen por Url y obtener usuario por token
 
 Para ejecutarlo, es necesario reconstruir los módulos de node usando el comando
 
@@ -25,3 +25,4 @@ tsc -w
 nodemon dist/  ó node dist/
 
 ```
+
