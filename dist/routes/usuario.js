@@ -30,7 +30,7 @@ userRoutes.post('/login', function (req, res) {
             });
             res.json({
                 ok: true,
-                tpken: tokenUser
+                token: tokenUser
             });
         }
         else {
@@ -58,7 +58,7 @@ userRoutes.post('/create', function (req, res) {
         });
         res.json({
             ok: true,
-            tpken: tokenUser
+            token: tokenUser
         });
     }).catch(function (err) {
         res.json({
@@ -91,7 +91,7 @@ userRoutes.put('/update', autenticacion_1.verificaToken, function (req, res) {
         });
         res.json({
             ok: true,
-            tpken: tokenUser
+            token: tokenUser
         });
     });
 });

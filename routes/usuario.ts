@@ -33,7 +33,7 @@ userRoutes.post('/login', ( req: Request, res: Response) => {
 
 			res.json({
 				ok: true,
-                tpken: tokenUser
+                token: tokenUser
 			});
 
 		} else {
@@ -70,7 +70,7 @@ userRoutes.post('/create', ( req: Request, res: Response) => {
 
 		res.json({
 			ok: true,
-            tpken: tokenUser
+            token: tokenUser
 		});
 
 	}).catch( err => {
@@ -112,7 +112,7 @@ userRoutes.put('/update', verificaToken, ( req: any, res: Response) => {
 
 		res.json({
 			ok: true,
-            tpken: tokenUser
+            token: tokenUser
 		});
 
 	});
